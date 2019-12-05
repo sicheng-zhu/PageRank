@@ -1,0 +1,5 @@
+certifi==2019.3.9
+gunicorn==20.0.4
+pipenv==2018.11.26
+virtualenv==16.5.0
+virtualenv-clone==0.5.3

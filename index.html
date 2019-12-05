@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PageRank</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/typo.css') }}">
+        <link rel="icon" type="image/png" href="http://example.com/myicon.png">
+        <script src="{{ url_for('static', filename='js/jquery-3.1.1.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/d3.min.js') }}"></script>
+    </head>
+
+    <body>
+        <h1><strong class="white">PageRank Visualization</strong></h1>
+
+        <div class="content" id="content">
+            <form>
+                <input type="text" class="searchbar" name="query" id="query" value="">
+                <button class="searchbtn" type="submit">Search</button>
+            </form>
+        </div>
+
+        <svg width="1024" height="500"></svg>
+
+        <ol>
+            <li>Black node represents the web page you select</li>
+            <li>The thickness of the segment represents the value of PageRank</li>
+            <li>Click a node will enter this node and display relations between it and other nodes</li>
+        </ol>
+        <!--<script src="js/main.js"></script>-->
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+</html>
