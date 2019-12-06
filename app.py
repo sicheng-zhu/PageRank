@@ -1,7 +1,5 @@
 from flask import Flask, render_template, jsonify
-# import pandas as pd
 import csv
-import json
 
 # Declare application
 app = Flask(__name__)
